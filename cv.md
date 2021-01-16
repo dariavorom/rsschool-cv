@@ -1,5 +1,5 @@
 # Darya Bichan
-
+![Darya Bichan](photo.jpg)
 ## Contacts
 * **e-mail**: dariavorom@gmail.com
 * **phone number**: +375 44 564 49 00
