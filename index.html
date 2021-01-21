@@ -15,32 +15,74 @@
         <img src="myself.jpg" alt="Darya Bichan">
     </figure>
     <div class="header_info">
-
+        <h1 class="name">Darya Bichan</h1>
+        <p>31 years old, from Homyel', Belarus.</p>
     </div>
 </header>
 <main>
     <section class="contacts">
-
+        <h2 class="title">Contacts</h2>
+        <ul>
+            <li>e-mail: dariavorom@gmail.com</li>
+            <li>phone number: +375 44 564 49 00</li>
+            <li>skype: darya_voromyova</li>
+        </ul>
     </section>
 
     <section class="about">
-
+        <h2 class="title">About me</h2>
+        <p>I just start to study front-end development and I really enjoy it. I want to work in the future in this area. My goal is become a demanded developer.</p>
     </section>
 
     <section class="skills">
-
+        <h2 class="title">Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+        </ul>
     </section>
 
     <section class="code">
-
+        <h2 class="title">Code example</h2>
+        <code>
+            window.onload = init;<br>
+            function init() {<br>
+            let images = document.getElementsByTagName('img');<br>
+            for ( let i = 0; i < images.length; i++ ) {<br>
+            images[i].onmouseover = showAnswer;<br>
+            images[i].onmouseout = reblur;<br>
+            }<br>
+            }<br>
+            function showAnswer(eventObj) {<br>
+            let image = eventObj.target;<br>
+            let name = image.id;<br>
+            name = 'img/' +  name + '.jpg';<br>
+            image.src = name;<br>
+            }<br>
+            function reblur(eventObj) {<br>
+            let image = eventObj.target;<br>
+            let name = image.id;<br>
+            name = 'img/' +  name + 'blur.jpg';<br>
+            image.src = name;<br>
+            }<br>
+        </code>
     </section>
 
     <section class="education">
-
+        <h2 class="title">Education</h2>
+        <ul>
+            <li><a href="https://www.ggdst.gomel.by/" title="ggdsk.gomel.by" target="_blank">Gomel State Road-Building College named after Lenin Komsomol</a></li>
+            <li><a href="https://learn.javascript.ru" title="https://learn.javascript.ru" target="_blank">https://learn.javascript.ru</a></li>
+            <li><a href="https://htmlacademy.ru/" title="https://htmlacademy.ru/" target="_blank">https://htmlacademy.ru</a></li>
+            <li>book: Изучаем HTML, XHTML и CSS by Фримен Эрик & Фримен Элизабет</li>
+            <li>book: Изучаем программирование на JavaScript by Э. Робсон, Эрик Фримен</li>
+        </ul>
     </section>
 
     <section class="english">
-        
+        <h2 class="title">English</h2>
+        <p>I hope it’s A2))</p>
     </section>
 </main>
 </body>
