@@ -45,28 +45,30 @@
 
     <section class="code">
         <h2 class="title">Code example</h2>
-        <code>
-            window.onload = init;<br>
-            function init() {<br>
-            let images = document.getElementsByTagName('img');<br>
-            for ( let i = 0; i < images.length; i++ ) {<br>
-            images[i].onmouseover = showAnswer;<br>
-            images[i].onmouseout = reblur;<br>
-            }<br>
-            }<br>
-            function showAnswer(eventObj) {<br>
-            let image = eventObj.target;<br>
-            let name = image.id;<br>
-            name = 'img/' +  name + '.jpg';<br>
-            image.src = name;<br>
-            }<br>
-            function reblur(eventObj) {<br>
-            let image = eventObj.target;<br>
-            let name = image.id;<br>
-            name = 'img/' +  name + 'blur.jpg';<br>
-            image.src = name;<br>
-            }<br>
-        </code>
+        <pre>
+            <code>
+    window.onload = init;
+    function init() {
+        let images = document.getElementsByTagName('img');
+        for ( let i = 0; i < images.length; i++ ) {
+            images[i].onmouseover = showAnswer;
+            images[i].onmouseout = reblur;
+        }
+    }
+    function showAnswer(eventObj) {
+        let image = eventObj.target;
+        let name = image.id;
+        name = 'img/' +  name + '.jpg';
+        image.src = name;
+    }
+    function reblur(eventObj) {
+        let image = eventObj.target;
+        let name = image.id;
+        name = 'img/' +  name + 'blur.jpg';
+        image.src = name;
+    }
+            </code>
+        </pre>
     </section>
 
     <section class="education">
